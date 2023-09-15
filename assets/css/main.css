@@ -929,6 +929,19 @@ section {
   padding: 0.5rem;
 }
 
+.outstanding-properties .property-item-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* flex-direction: column; */
+  justify-content: space-between;
+  border-radius: 10px;
+  margin: 0.7rem 0;
+  background-color: var(--bg-white);
+  border: 1px solid var(--bg-light);
+  padding: 0.5rem;
+}
+
 .outstanding-properties .property-item .card-body .principal-info small,
 .outstanding-properties .property-item .card-body .principal-info p {
   font-size: 1rem;
@@ -956,6 +969,10 @@ section {
   flex-direction: column;
 }
 
+.property-item-img{
+  height: 272px !important;
+ object-fit: cover;
+}
 .card-props {
   display: flex !important;
   justify-content: start;
@@ -3076,4 +3093,26 @@ footer .container .footer-nav-links ul li {
 
 .contact-section .contact-form-info ul li i {
   padding-right: 0.5rem;
+}
+
+.mapboxgl-canvas-container {
+  width: 1920px;
+  height: 80vh !important;
+  border-radius: 15px;
+}
+
+.mapboxgl-canvas {
+  width: max-content !important;
+}
+
+#map {
+  width: 100% !important;
+  height: 45% !important;
+  border-radius: 5px !important;
+
+}
+
+.initialMap {
+  height: 0 !important;
+  overflow: hidden;
 }
